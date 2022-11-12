@@ -26,8 +26,13 @@
 #
 #         return []
 
+from typing import Any, Text, Dict, List
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
 
-class ActionStockPrice(stockname):
+from stocks_api import api_stock_price 
+
+class ActionStockPrice(Action):
 
      def name(self) -> Text:
          return "action_stock_price"
@@ -36,10 +41,14 @@ class ActionStockPrice(stockname):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        #entities = tracker.latest_message.get("entities", [])
+        #entities = {e["entity"]: e["value"] for e in entities}
 
-     
+        entities = tracker.latest_message['entities'][0]['value']
 
-         dispatcher.utter_message(text="The stock price of {stockname} is {stockprice}")
+        stockprice = api_stock_price(entities)
 
-         return []
+        dispatcher.utter_message(text=f"The stock price of {entities} is {stockprice}")
+
+        return []
 

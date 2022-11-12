@@ -31,5 +31,7 @@ stories:
 
 - story: stock_query
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: ask_stock
   - action: action_stock_price

@@ -10,6 +10,10 @@ intents:
   - bot_challenge
   - ask_stock
 
+
+actions:
+  - action_stock_price
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
