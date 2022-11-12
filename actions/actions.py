@@ -25,3 +25,21 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+
+
+class ActionStockPrice(stockname):
+
+     def name(self) -> Text:
+         return "action_stock_price"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+
+     
+
+         dispatcher.utter_message(text="The stock price of {stockname} is {stockprice}")
+
+         return []
+
