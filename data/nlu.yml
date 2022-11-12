@@ -89,3 +89,12 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_stock
+  examples: |
+    - I want to know the price of [AAPL](stockname)
+    - I want to know the price of [Tata Consultancy Services Limited](stockname)
+    - I want to know the price of [Wipro Limited](stockname)
+    - I want to know the price of [NHPC Limited](stockname)
+    - I want to know the price of [MRF Ltd](stockname)
+    
