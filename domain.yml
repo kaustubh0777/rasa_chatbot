@@ -16,7 +16,7 @@ actions:
   - action_get_news
 
 entities:
-  -stockname
+  - stockname
 
 responses:
   utter_greet:
