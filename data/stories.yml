@@ -35,3 +35,8 @@ stories:
   - action: utter_greet
   - intent: ask_stock
   - action: action_stock_price
+
+- story: fetch_news
+  steps:
+    - intent: ask_news
+    - action: action_get_news

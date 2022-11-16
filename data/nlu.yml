@@ -118,3 +118,6 @@ nlu:
     - How much is the share price of [MRF Ltd](stockname)
     - The price of the stock [MRF Ltd](stockname)
     
+
+- intent: ask_news
+    - What is in the news today?

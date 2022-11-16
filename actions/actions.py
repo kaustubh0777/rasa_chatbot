@@ -30,7 +30,8 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from stocks_api import api_stock_price 
+from stocks_api import api_stock_price
+from news_api import market_news
 
 class ActionStockPrice(Action):
 
@@ -52,3 +53,19 @@ class ActionStockPrice(Action):
 
         return []
 
+
+class ActionMarketNews(Action):
+
+     def name(self) -> Text:
+         return "action_get_news"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+         
+        today_news = market_news()
+
+        dispatcher.utter_message(text=today_news)
+
+        return []
