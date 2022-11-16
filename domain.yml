@@ -9,10 +9,14 @@ intents:
   - mood_unhappy
   - bot_challenge
   - ask_stock
-
+  - ask_news
 
 actions:
   - action_stock_price
+  - action_get_news
+
+entities:
+  -stockname
 
 responses:
   utter_greet:
