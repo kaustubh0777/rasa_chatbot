@@ -32,6 +32,7 @@ from rasa_sdk.executor import CollectingDispatcher
 
 from stocks_api import api_stock_price
 from news_api import market_news
+from term_def import get_term_definition
 
 class ActionStockPrice(Action):
 
@@ -45,11 +46,11 @@ class ActionStockPrice(Action):
         #entities = tracker.latest_message.get("entities", [])
         #entities = {e["entity"]: e["value"] for e in entities}
 
-        entities = tracker.latest_message['entities'][0]['value']
+        stcknme = tracker.latest_message['entities'][0]['value']
 
-        stockprice = api_stock_price(entities)
+        stockprice = api_stock_price(stcknme)
 
-        dispatcher.utter_message(text=f"The stock price of {entities} is {stockprice}")
+        dispatcher.utter_message(text=f"The stock price of {stcknme} is {stockprice}")
 
         return []
 
@@ -67,5 +68,23 @@ class ActionMarketNews(Action):
         today_news = market_news()
 
         dispatcher.utter_message(text=today_news)
+
+        return []
+
+
+class ActionTermDefinition(Action):
+
+     def name(self) -> Text:
+         return "action_get_definition"
+
+     def run(self, dispatcher: CollectingDispatcher,
+             tracker: Tracker,
+             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        fin_term = tracker.latest_message['entities'][0]['value']
+
+        term_def = get_term_definition(fin_term)     
+
+        dispatcher.utter_message(text=f"The term {fin_term} is defined as {term_def}")
 
         return []
