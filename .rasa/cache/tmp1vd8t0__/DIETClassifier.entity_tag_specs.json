@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-fin_term",
+      "2": "I-fin_term",
+      "3": "L-fin_term",
+      "4": "U-fin_term",
+      "5": "B-stockname",
+      "6": "I-stockname",
+      "7": "L-stockname",
+      "8": "U-stockname",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-fin_term": 1,
+      "I-fin_term": 2,
+      "L-fin_term": 3,
+      "U-fin_term": 4,
+      "B-stockname": 5,
+      "I-stockname": 6,
+      "L-stockname": 7,
+      "U-stockname": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
