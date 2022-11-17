@@ -120,6 +120,7 @@ nlu:
     
 
 - intent: ask_news
+  examples: |
     - What is in the news today?
     - What is currently in the news?
     - Can you tell me the news
