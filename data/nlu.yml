@@ -145,4 +145,8 @@ nlu:
     - Tell me some finance news
     - What is happening in finance market
     - What is happening in finance market?
-    - Will you tell me the news of the market    
+    - Will you tell me the news of the market
+
+- intent: ask_term
+  examples: |
+    - What is the meaning of [gametheory](fin_term)?
