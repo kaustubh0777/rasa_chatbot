@@ -2,3 +2,4 @@ chatbot_venv
 *.tar.gz
 apikeys.txt
 credentials.yml
+.rasa/*
