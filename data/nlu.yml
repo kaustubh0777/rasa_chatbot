@@ -150,19 +150,19 @@ nlu:
 - intent: ask_term
   examples: |
     - What is the meaning of [gametheory](fin_term)?
-    - What does [gametheory] (fin_term) stand for?
-    - What does [gametheory] (fin_term) stand for
-    - What does [gametheory] (fin_word) mean?
-    - What does [gametheory] (fin_word) mean
-    - What can [gametheory] (fin_term) mean?
-    - What is [gametheory] (fin_term) all about?
-    - What does [gametheory] (fin_term) have to do with it?
-    - What does [game theory] (fin_term) mean?
-    - How does [gametheory] (fin_term) mean?
-    - How does [gametheory] (fin_term) work?
-    - What is [game theory] (fin_term)?
-    - What does [gametheory] (fin_term) do?
-    - How to [gametheory] (fin_term)?
+    - What does [gametheory(fin_term) stand for?
+    - What does [gametheory](fin_term) stand for
+    - What does [gametheory](fin_term) mean?
+    - What does [gametheory](fin_term) mean
+    - What can [gametheory](fin_term) mean?
+    - What is [gametheory](fin_term) all about?
+    - What does [gametheory](fin_term) have to do with it?
+    - What does [game theory](fin_term) mean?
+    - How does [gametheory](fin_term) mean?
+    - How does [gametheory](fin_term) work?
+    - What is [game theory](fin_term)?
+    - What does [gametheory](fin_term) do?
+    - How to [gametheory](fin_term)?
     - Can you tell me the meaning of [gametheory](fin_term)?
     - Please explain [gametheory](fin_term)?
     - Please explain [gametheory](fin_term)
@@ -173,3 +173,8 @@ nlu:
     - What will be the meaning of [gametheory](fin_term)?
     - I cannot understand [gametheory](fin_term)
     - What is the meaning of [gametheory](fin_term)
+    - What is the meaning of [econimics](fin_term)
+    - What is the meaning of [collateral](fin_term)
+    - What is the meaning of [bond](fin_term)
+    - What is the meaning of [balancedscorecard](fin_term)
+

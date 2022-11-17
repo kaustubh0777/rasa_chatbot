@@ -81,10 +81,10 @@ class ActionTermDefinition(Action):
              tracker: Tracker,
              domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        fin_term = tracker.latest_message['entities'][0]['value']
+        fin_term = tracker.latest_message['entities']#[0]['value']
 
-        term_def = get_term_definition(fin_term)     
+        #term_def = get_term_definition(fin_term)     
 
-        dispatcher.utter_message(text=f"The term {fin_term} is defined as {term_def}")
+        dispatcher.utter_message(text=f"The term {fin_term} is defined as ")
 
         return []

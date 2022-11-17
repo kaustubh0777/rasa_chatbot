@@ -3,3 +3,4 @@ chatbot_venv
 apikeys.txt
 credentials.yml
 .rasa
+__pycache__
