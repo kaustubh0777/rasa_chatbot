@@ -20,4 +20,3 @@ def market_news():
 	return market_news
 
 
-print(market_news())

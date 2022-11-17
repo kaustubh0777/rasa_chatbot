@@ -35,7 +35,7 @@ responses:
   utter_goodbye:
   - text: "Bye"
 
-  utter_iamabot:
+  utter_iamabot:  
   - text: "I am a bot, powered by Rasa."
 
   utter_stock_price_error:
