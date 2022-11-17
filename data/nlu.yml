@@ -121,3 +121,27 @@ nlu:
 
 - intent: ask_news
     - What is in the news today?
+    - What is currently in the news?
+    - Can you tell me the news
+    - What is in the news today
+    - what is in the news today
+    - Please let me know the news
+    - I need you to tell me the news
+    - Can you fill me in on the news
+    - Just give me the news
+    - Tell me what the news is
+    - Can you tell me what's going on
+    - Let me get the news
+    - I want to know the news
+    - I want to hear the news
+    - What's happening in the market
+    - tell me the top news of the market
+    - Tell me some headlines of the market
+    - what are some top headlines of the market
+    - What is happening around the market
+    - Show me some news of the market
+    - Tell me the market news right now
+    - Tell me some finance news
+    - What is happening in finance market
+    - What is happening in finance market?
+    - Will you tell me the news of the market    
