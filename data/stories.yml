@@ -40,3 +40,8 @@ stories:
   steps:
     - intent: ask_news
     - action: action_get_news
+
+- story: fetch_term_def
+  steps:
+    - intent: ask_term
+    - action: action_get_definition
